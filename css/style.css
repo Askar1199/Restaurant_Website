@@ -1,0 +1,927 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f5;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.section_container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff8243;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f16620;
+}
+
+header nav {
+  position: fixed;
+  z-index: 100;
+  transition: all 1s;
+  width: 100%;
+  padding: 10px 0;
+}
+header nav .navBar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+header nav .navBar ul {
+  display: flex;
+  align-items: center;
+}
+header nav .navBar ul a {
+  padding: 10px 15px;
+  color: #0e0c24;
+}
+header nav .navBar ul input {
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fe8d41;
+}
+header nav .navBar ul .short {
+  padding: 10px;
+}
+header nav .navBar ul .inputA {
+  padding: 0;
+}
+header nav .navBar ul .searchNav {
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff;
+}
+header nav .navBar ul .searchNav i {
+  color: #fe8d41;
+  cursor: pointer;
+}
+header nav .navBar ul .searchNav a {
+  margin-right: 0;
+}
+header nav .navBar ul .iconNav_ {
+  border-radius: 10px;
+  color: #fe8d41;
+  box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff;
+  transition: all;
+  transition-duration: 3s;
+  margin: 0;
+  margin-left: 20px;
+}
+header nav .navBar ul .iconNav_ :hover {
+  color: #ffbc26;
+}
+header nav .navBar ul .navList {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s;
+  transform: translateX();
+}
+header nav .navBar ul .navList:hover {
+  box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+  border-radius: 50px;
+  color: #fe8d41;
+}
+header nav .navBar ul .menuToggle {
+  display: none;
+  max-width: 100%;
+  height: 100%;
+}
+header nav .navBar ul .menuToggle .menuI {
+  color: #fe8d41;
+  font-size: 2rem;
+}
+header .newClass {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.banner {
+  padding: 200px 0 300px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.banner .leafCont {
+  position: absolute;
+  z-index: -1;
+  left: -125px;
+  top: 40%;
+  filter: blur(2px);
+  max-width: 284px;
+}
+.banner .leafCont img {
+  width: 100%;
+}
+.banner .berryCont {
+  max-width: 150px;
+  position: absolute;
+  top: 56px;
+  right: 48px;
+  z-index: -1;
+  filter: blur(3px);
+}
+.banner .berryCont img {
+  width: 100%;
+}
+.banner .bannerContent {
+  display: flex;
+}
+.banner .bannerContent .bannerText {
+  flex-basis: 50%;
+  padding: 0 1.2rem;
+}
+.banner .bannerContent .bannerText h1 {
+  font-size: 80px;
+  line-height: 90px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+.banner .bannerContent .bannerText h1 span {
+  color: #ff8243;
+}
+.banner .bannerContent .bannerText p {
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(86, 89, 92);
+}
+.banner .bannerContent .bannerText .bannerAnchor {
+  margin-top: 20px;
+}
+.banner .bannerContent .bannerText .bannerAnchor a {
+  min-width: 120px;
+  min-height: 58px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 6px 30px;
+  transition: all 0.8s;
+  color: #0d0d25;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+.banner .bannerContent .bannerText .bannerAnchor a:hover {
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+}
+.banner .bannerContent .bannerImgCont {
+  width: 50%;
+  padding-left: 1.2rem;
+}
+.banner .bannerContent .bannerImgCont .imgCont {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+}
+.banner .bannerContent .bannerImgCont .imgCont .imgBan {
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/main-b.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: circleAni 4.5s linear infinite alternate;
+  box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+}
+@keyframes circleAni {
+  0% {
+    border-radius: 48% 52% 57% 43%/34% 44% 56% 66%;
+  }
+  25% {
+    border-radius: 62% 38% 64% 36%/34% 55% 45% 66%;
+  }
+  50% {
+    border-radius: 43% 57% 51% 49%/33% 42% 58% 67%;
+  }
+  100% {
+    border-radius: 40% 60% 43% 57%/52% 32% 68% 48%;
+  }
+}
+.banner .bannerContent .bannerImgCont .bannerSushi {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.banner .bannerContent .bannerImgCont .bannerSushi h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.banner .bannerContent .bannerImgCont .bannerSushi p {
+  color: rgb(49, 52, 56);
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+
+.brand__section {
+  margin-bottom: 100px;
+}
+.brand__section .section_container {
+  padding: 0 15px;
+}
+.brand__section .brand__title {
+  margin-bottom: 3rem;
+}
+.brand__section .brand__title h5 {
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #0d0d25;
+  opacity: 0.8;
+  font-size: 20px;
+}
+.brand__section .brand__cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.brand__section .brand__cont .brand__div {
+  padding: 0 15px;
+  max-width: 220px;
+  transition: 0.5s;
+}
+.brand__section .brand__cont .brand__div img {
+  width: 100%;
+}
+.brand__section .brand__cont .brand__div:hover {
+  transform: scale(1.3);
+}
+
+.about__section .about__textContent {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about__section .about__textContent .aboutPara {
+  display: inline-block;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  padding: 3px 20px;
+  border-radius: 60px;
+  font-size: 14px;
+  color: #fe8d41;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.about__section .about__textContent h2 {
+  font-size: 34px;
+  line-height: 48px;
+  font-family: "Playfair Display", serif;
+  color: #0d0d25;
+  margin-bottom: 15px;
+}
+.about__section .about__textContent h2 span {
+  display: block;
+}
+.about__section .about__textContent .about__pattern {
+  margin-bottom: 20px;
+}
+.about__section .about__textContent .about__para {
+  line-height: 30px;
+  color: rgb(33, 37, 41);
+  padding: 0 20px;
+}
+.about__section .about__video {
+  padding-bottom: 70px;
+}
+.about__section .about__image {
+  width: 66.66%;
+  height: 55vh;
+  margin: auto;
+  margin-bottom: 50px;
+  background-image: url(/images/about.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(36, 39, 37, 0.3);
+  border-radius: 40px;
+  min-height: 400px;
+}
+.about__section .about__play {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+}
+.about__section .about__play a {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fe8d41;
+  width: 100px;
+  height: 100px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  border-radius: 50%;
+}
+.about__section .about__play a:hover {
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+}
+.about__section .about__play a i {
+  padding-left: 10px;
+}
+.about__section .about__play .video__span {
+  margin-left: 20px;
+}
+.about__section .about__play .video__span span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #bfbfbf;
+}
+
+.menu__section {
+  background-image: url(/images/menu-bg.png);
+  background-color: #f8f9fa;
+  background-size: contain;
+  padding: 100px 0;
+}
+.menu__section .section_container {
+  padding: 0 20px;
+}
+.menu__section .menu__heading {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.menu__section .menu__heading .menuPara {
+  display: inline-block;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  padding: 3px 20px;
+  border-radius: 60px;
+  font-size: 14px;
+  color: #fe8d41;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.menu__section .menu__heading h2 {
+  font-size: 38px;
+  line-height: 48px;
+  font-family: "Playfair Display", serif;
+  color: #0d0d25;
+  margin-bottom: 15px;
+}
+.menu__section .menu__heading h2 span {
+  display: block;
+}
+.menu__section .menu__heading .menu__pattern {
+  margin-bottom: 20px;
+}
+.menu__section .menu__filters {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.menu__section .menu__filters .menu__ul {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 60px;
+  background: linear-gradient(145deg, #ececec, #ffffff);
+  box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.menu__section .menu__filters .menu__ul .filter--menu {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 26px;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.menu__section .menu__filters .menu__ul .filter--menu img {
+  margin-right: 10px;
+}
+.menu__section .menu__filters .menu__ul .filter__active {
+  color: white;
+  background-color: #fe8d41;
+  border-radius: 30px;
+}
+.menu__section .dish-box {
+  border-radius: 30px;
+  background: linear-gradient(145deg, #ececec, #ffffff);
+  box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+  display: flow-root;
+  padding: 0 30px 40px;
+  padding-top: 0;
+  margin: 130px 0 30px;
+  transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  text-align: center;
+}
+.menu__section .dish-box:hover {
+  transform: scale(1.03);
+}
+.menu__section .dist-img {
+  margin-top: -130px;
+  margin-bottom: 30px;
+}
+.menu__section .dist-img img {
+  box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.menu__section .dish-rating {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.menu__section .dish-rating i {
+  color: #fe8d41;
+}
+.menu__section .dish-title {
+  padding: 0 30px;
+}
+.menu__section .dish-title .h3-title {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #0d0d25;
+  transition: 0.3s;
+  min-height: 76px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 900;
+}
+.menu__section .dish-title p {
+  color: #bfbfbf;
+}
+.menu__section .dish-info ul, .menu__section .dist-bottom-row ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.menu__section .dish-info ul li {
+  display: inline-block;
+  flex: 1;
+}
+.menu__section .dish-info ul li:last-child {
+  text-align: right;
+  border-left: 2px solid rgba(204, 204, 204, 0.3);
+}
+.menu__section .dist-bottom-row ul li:last-child {
+  text-align: right;
+}
+.menu__section .dish-info ul li p {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+  font-weight: 300;
+}
+.menu__section .dish-info ul li b {
+  font-weight: 600;
+}
+.menu__section .dish-info, .menu__section .dist-bottom-row {
+  padding: 0 30px;
+}
+.menu__section .dish-info {
+  border-bottom: 2px solid rgba(204, 204, 204, 0.3);
+  margin: 30px 0 30px;
+  padding-bottom: 30px;
+}
+.menu__section .dist-bottom-row ul li {
+  display: flex;
+  align-items: center;
+}
+.menu__section .dist-bottom-row ul li b {
+  font-size: 30px;
+}
+.menu__section .dish-add-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: 0.3s;
+  background: linear-gradient(145deg, #ffc954, #ffbc00);
+  box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
+}
+.menu__section .dish-add-btn i {
+  color: #ffffff;
+  font-size: 22px;
+}
+.menu__section .dish-add-btn:hover {
+  background: linear-gradient(145deg, #e3a92b, #ffc933);
+}
+.menu__section #parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.menu__section #parent .menu__card {
+  flex-basis: 30%;
+}
+
+.foodType_section {
+  position: relative;
+  z-index: 2;
+}
+.foodType_section .section_container {
+  padding: 100px 0;
+}
+.foodType_section .container {
+  display: flex;
+  align-items: center;
+}
+.foodType_section .container .content_cont {
+  flex-basis: 58.88%;
+  padding: 15px;
+}
+.foodType_section .container .content_cont h2 {
+  text-transform: capitalize;
+  font-size: 52px;
+  line-height: 72px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+}
+.foodType_section .container .content_cont p {
+  line-height: 30px;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+.foodType_section .container .img_cont {
+  flex-basis: 41.55%;
+  padding: 15px;
+}
+.foodType_section .container .img_cont .img {
+  margin-top: 3rem;
+}
+.foodType_section .container .img_cont .img img {
+  max-width: 100%;
+}
+.foodType_section .container .cont2 {
+  flex-basis: 48.88%;
+}
+.foodType_section .container .cont3 {
+  flex-basis: 50%;
+}
+
+.bookTable {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+.bookTable .section_container {
+  position: relative;
+}
+.bookTable .bookTable__design img {
+  max-width: 550px;
+  position: absolute;
+  top: -110px;
+  right: 73%;
+}
+.bookTable .bookTable__design2 img {
+  max-width: 550px;
+  position: absolute;
+  top: -110px;
+  left: 73%;
+  transform: scale(-1, 1);
+}
+.bookTable .book__heading {
+  text-align: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  margin-bottom: 70px;
+}
+.bookTable .book__heading .bookPara {
+  display: inline-block;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  padding: 3px 20px;
+  border-radius: 60px;
+  font-size: 14px;
+  color: #fe8d41;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.bookTable .book__heading h2 {
+  font-size: 34px;
+  line-height: 48px;
+  font-family: "Playfair Display", serif;
+  color: #0d0d25;
+  margin-bottom: 15px;
+}
+.bookTable .book__heading .book__pattern {
+  margin-bottom: 20px;
+}
+.bookTable .book__info {
+  margin: 30px 0 20px;
+}
+.bookTable .book__info .book__details {
+  display: flex;
+  align-items: center;
+}
+.bookTable .book__info .book__details .book__timing {
+  flex-basis: 33.33%;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0 12px;
+}
+.bookTable .book__info .book__details .book__timing h3 {
+  color: #0d0d25;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.bookTable .book__info .book__details .book__timing p {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(33, 37, 41);
+}
+.bookTable .book__info .book__details .book__contact {
+  flex-basis: 33.33%;
+  text-align: center;
+  padding: 0 12px;
+}
+.bookTable .book__info .book__details .book__contact .book__contact2 {
+  padding: 12px 0;
+  border-left: 3px dotted rgba(13, 13, 37, 0.5);
+  border-right: 3px dotted rgba(13, 13, 37, 0.5);
+}
+.bookTable .book__info .book__details .book__contact p {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  color: #fe8d41;
+}
+.bookTable .book__info .book__details .book__contact a {
+  font-size: 32px;
+  font-weight: 500;
+  color: #0d0d25;
+  transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+.bookTable .book__info .book__details .book__contact a:hover {
+  color: #fe8d41;
+}
+
+@media (max-width: 1012px) {
+  body {
+    overflow-x: hidden;
+  }
+  header nav .navBar ul .navList {
+    display: none;
+  }
+  .banner {
+    padding: 160px 0 200px;
+  }
+  .banner .berryCont {
+    display: none;
+  }
+  .banner .leafCont {
+    max-width: 300px;
+  }
+  .banner .leafCont img {
+    width: 100%;
+  }
+  .banner .bannerContent {
+    flex-wrap: wrap;
+  }
+  .banner .bannerContent .bannerText {
+    width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .banner .bannerContent .bannerImgCont {
+    flex-basis: 90%;
+    height: 400px;
+    margin: auto;
+  }
+  .brand__section .brand__title {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+  }
+  .menu__section .menu__filters .menu__ul {
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+    margin: auto;
+  }
+  .menu__section .menu__filters .menu__ul::-webkit-scrollbar {
+    display: none;
+  }
+  .menu__section .dish-title .h3-title {
+    display: block;
+    min-height: auto;
+    margin-bottom: 12px;
+  }
+  .menu__section #parent {
+    justify-content: space-between;
+  }
+  .menu__section #parent .menu__card {
+    flex-basis: 34%;
+  }
+}
+@media (max-width: 767px) {
+  .menu__section #parent {
+    justify-content: center;
+  }
+  .menu__section #parent .menu__card {
+    flex-basis: 50%;
+  }
+  .bookTable .book__info .book__details {
+    flex-wrap: wrap;
+  }
+  .bookTable .book__info .book__details .book__timing {
+    flex-basis: 100%;
+  }
+  .bookTable .book__info .book__details .book__contact {
+    flex-basis: 100%;
+    margin: 30px 0;
+  }
+  .bookTable .book__info .book__details .book__contact .book__contact2 {
+    border: none;
+    border-top: 3px dotted rgba(13, 13, 37, 0.5);
+    border-bottom: 3px dotted rgba(13, 13, 37, 0.5);
+  }
+}
+@media (max-width: 576px) {
+  header nav .navBar {
+    height: 50px;
+  }
+  header nav .navBar .logo_div {
+    max-width: 24%;
+  }
+  header nav .navBar .logo_div img {
+    width: 100%;
+  }
+  header nav .navBar ul .navHide {
+    display: none;
+  }
+  header nav .navBar ul .menuToggle {
+    display: block;
+  }
+  header nav .navBar ul .menuToggle ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f3f5;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow-y: auto;
+    transform: translateY(-100%);
+    padding-top: max(9vh, 30px);
+    padding-left: max(6vh, 30px);
+    background-image: url(/images/blog-pattern-bg.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  header nav .navBar ul .menuToggle ul .menuList {
+    display: inline-block;
+  }
+  header nav .navBar ul .menuToggle ul .menuList a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.5s;
+    transform: translateX();
+  }
+  header nav .navBar ul .menuToggle ul .menuList a:hover {
+    border-radius: 30px;
+    box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+    color: #fe8d41;
+  }
+  header nav .navBar ul .menuToggle ul .exitMenu {
+    display: inline-block;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #fe8d41;
+  }
+  header nav .navBar ul .toggled ul {
+    transform: translateY(0);
+  }
+  .banner .berryCont {
+    display: none;
+  }
+  .banner .leafCont {
+    display: none;
+  }
+  .banner .leafCont {
+    max-width: 270px;
+  }
+  .banner .berryCont {
+    max-width: 125px;
+    top: 60px;
+  }
+  .banner .bannerContent .bannerText h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .banner .bannerContent .bannerImgCont {
+    flex-basis: 80%;
+    padding: 0;
+    margin: auto;
+    height: 300px;
+  }
+  .banner .bannerContent .bannerImgCont .imgCont {
+    padding: 0;
+  }
+  .brand__section {
+    margin-bottom: 60px;
+  }
+  .menu__section .dist-img img {
+    width: 180px;
+  }
+  .menu__section .dist-img {
+    margin-top: -80px;
+  }
+  .menu__section .dish-box {
+    margin: 80px 0 30px;
+  }
+  .menu__section .dish-info ul li p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .menu__section .dish-info ul li b {
+    font-size: 14px;
+  }
+  .menu__section .dish-box {
+    max-width: 340px;
+    margin: 80px auto 30px;
+    padding: 0 0 30px;
+  }
+  .menu__section #parent .menu__card {
+    flex-basis: 100%;
+  }
+  .foodType_section .section_container {
+    padding: 50px 0;
+  }
+  .foodType_section .container {
+    flex-wrap: wrap;
+  }
+  .foodType_section .container .content_cont {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+  .foodType_section .container .content_cont h2 {
+    overflow: hidden;
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .foodType_section .container .img_cont {
+    flex-basis: 100%;
+  }
+  .foodType_section .cont1 {
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
