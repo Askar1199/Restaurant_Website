@@ -212,7 +212,7 @@ header .newClass {
 .banner .bannerContent .bannerImgCont .imgCont .imgBan {
   width: 100%;
   height: 100%;
-  background-image: url(/images/main-b.jpg);
+  background-image: url(../images/main-b.jpg);
   background-size: cover;
   background-position: center;
   animation: circleAni 4.5s linear infinite alternate;
@@ -325,7 +325,7 @@ header .newClass {
   height: 55vh;
   margin: auto;
   margin-bottom: 50px;
-  background-image: url(/images/about.jpg);
+  background-image: url(../images/about.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 20px rgba(36, 39, 37, 0.3);
@@ -367,7 +367,7 @@ header .newClass {
 }
 
 .menu__section {
-  background-image: url(/images/menu-bg.png);
+  background-image: url(../images/menu-bg.png);
   background-color: #f8f9fa;
   background-size: contain;
   padding: 100px 0;
