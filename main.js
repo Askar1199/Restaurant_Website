@@ -80,7 +80,7 @@ $(document).ready(()=>{
                     dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
                 }
                 slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
-                slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+                slider_id.querySelector(".dot_cont").innerHTML = dots_div;
             
                 let slide_index = 0;
             

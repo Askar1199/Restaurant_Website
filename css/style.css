@@ -729,7 +729,6 @@ header .newClass {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  border: solid 1px #a0a0a0;
   height: 500px;
 }
 .bookTableCarousel .hcg-slides img {
@@ -756,17 +755,30 @@ header .newClass {
   margin-top: 10px;
   text-align: center;
 }
+.bookTableCarousel .dot_cont {
+  display: flex;
+  margin: 35px auto 0;
+  padding: 10px 20px;
+  border-radius: 60px;
+  background: linear-gradient(145deg, #ececec, #ffffff);
+  box-shadow: 25px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #000;
+}
 .bookTableCarousel .hcg-slide-dot {
   cursor: pointer;
   height: 13px;
   width: 13px;
-  margin: 0 2px;
+  margin: 0 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  transition: 0.8s;
 }
 .bookTableCarousel .hcg-slide-dot.dot-active {
-  background-color: #717171;
+  background-color: #fe8d41;
+  transform: scale(1.5);
 }
 .bookTableCarousel .hcg-slide-number {
   color: #ffffff;
