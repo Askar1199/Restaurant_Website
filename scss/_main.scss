@@ -735,3 +735,105 @@ header{
     }
 }
 
+.bookTableCarousel{
+    #hcg-slider-1 .hcg-slide-container {
+        width: 100%;
+        height: fit-content;
+    }
+    .hcg-slider {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .hcg-slide-container {
+        max-width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+    .hcg-slides {
+        display: none;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: solid 1px #a0a0a0;
+        height: 500px;
+    }
+    .hcg-slides img {
+        width: 100%;
+        // max-height: 100%;
+        display: inline-block;
+        object-fit: contain;
+    }
+    .hcg-slide-text {
+        color: #ffffff;
+        font-size: 14px;
+        padding: 3px 5px;
+        position: absolute;
+        bottom: 0;
+        border-radius: 5px;
+        left: 50%;
+        text-align: center;
+        text-shadow: 0 0 2px #000;
+        background-color: rgba(255,255,255,0.30);
+        display: inline-block;
+        transform: translate(-50%, -5px);
+    }
+    .hcg-slide-dot-control {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .hcg-slide-dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .hcg-slide-dot.dot-active {
+        background-color: #717171;
+    }
+    .hcg-slide-number {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 4px 7px;
+        position: absolute;
+        border-radius: 5px;
+        top: 5px;
+        left: 5px;
+        background-color: rgba(255,255,255,0.30);
+    }
+    /************CSS Animation***********/
+    
+    .animated { 
+        animation-name: vanishIn; 
+        animation-duration: 1s;
+    }
+    @keyframes vanishIn {
+        0% {
+            transform: scale3d(1, 1, 1)
+        }
+        30% {
+            transform: scale3d(1.25, .75, 1)
+        }
+        40% {
+            transform: scale3d(0.75, 1.25, 1)
+        }
+        50% {
+            transform: scale3d(1.15, .85, 1)
+        }
+        65% {
+            transform: scale3d(.95, 1.05, 1)
+        }
+        75% {
+            transform: scale3d(1.05, .95, 1)
+        }
+        100% {
+            transform: scale3d(1, 1, 1)
+        }
+    }
+    .vanishIn {
+        animation-name: vanishIn;
+    }   
+}
