@@ -319,25 +319,11 @@
 
     .swiper-button-wp{
         height: 200px;
-    }
-
-    .pn2{
-        display: block;
-    }
-
-    .pn1{
         display: none;
     }
-    .swiper-button-wp{
-        margin: 0;
-        max-width: 100%;
-        padding-right: 30px;
+    .team-slider{
+        padding-bottom: 100px;
     }
-    
-    .swiper-pagination{
-        padding: 0;
-    }
-
    
 }
 
@@ -348,6 +334,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+        
     }
     .team-img {
         height: 280px;

@@ -939,7 +939,7 @@ header .newClass {
   max-width: 80%;
   margin: auto;
   margin-top: 60px;
-  border: 1px solid chartreuse;
+  margin-bottom: 100px;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -999,10 +999,6 @@ header .newClass {
 .swiper-pagination-bullet-active {
   background: #fe8d41;
   width: 30px;
-}
-
-.pn2 {
-  display: none;
 }
 
 @media (max-width: 1012px) {
@@ -1240,20 +1236,10 @@ header .newClass {
   }
   .swiper-button-wp {
     height: 200px;
-  }
-  .pn2 {
-    display: block;
-  }
-  .pn1 {
     display: none;
   }
-  .swiper-button-wp {
-    margin: 0;
-    max-width: 100%;
-    padding-right: 30px;
-  }
-  .swiper-pagination {
-    padding: 0;
+  .team-slider {
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 400px) {

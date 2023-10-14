@@ -968,7 +968,7 @@ header{
     max-width: 80%;
     margin: auto;
     margin-top: 60px;
-    border: 1px solid chartreuse;
+    margin-bottom: 100px;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1029,7 +1029,4 @@ header{
 .swiper-pagination-bullet-active {
     background: $orange;
     width: 30px;
-}
-.pn2{
-    display: none;
 }
