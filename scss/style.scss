@@ -18,6 +18,10 @@ body{
 a{
     text-decoration: none;
 }
+a:active{
+    -webkit-tap-highlight-color: transparent;
+    
+}
 ul{
     list-style: none;
 }

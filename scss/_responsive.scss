@@ -123,13 +123,30 @@
         }
    }
 
-   .team-img {
-    height: 430px;
-}
+   .ourTeam{
+    .team-img {
+        height: 430px;
+    }
+    
+    .team-slider{
+        padding-left: 30px;
+    }
+   }
 
-.team-slider{
-    padding-left: 30px;
-}
+   .feedback_section{
+        .feedback_content{
+            padding: 0 20px;
+            .imgCont{
+                flex-basis: 60%;
+                margin: auto;
+            }
+        }
+        .feedback_detail{
+            flex-basis: 100%;
+       }
+   }
+   
+   
     
 }
 
@@ -313,31 +330,48 @@
         }
    }
 
-   .team-img {
-    height: 330px;
-    }
+   .ourTeam{
+    .team-img {
+        height: 330px;
+        }
+    
+        .swiper-button-wp{
+            height: 200px;
+            display: none;
+        }
+        .team-slider{
+            padding-bottom: 100px;
+        }
+   }
 
-    .swiper-button-wp{
-        height: 200px;
-        display: none;
+   .feedback_section{
+        padding-bottom: 0;
+    .testimonial-box-top{
+        justify-content: space-between;
+        // max-width: fit-content;
     }
-    .team-slider{
-        padding-bottom: 100px;
+    .testimonials-box{
+        max-width: 100%;
     }
+   }
+  
    
 }
 
 @media ( max-width:400px){
-    .team-box .h3-title {
-        min-height: 72px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        
+    .ourTeam{
+        .team-box .h3-title {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .team-img {
+            height: 280px;
+        }
     }
-    .team-img {
-        height: 280px;
-    }
+    
     
 }

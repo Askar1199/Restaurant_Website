@@ -6,10 +6,11 @@ $(document).ready(()=>{
         $(".menuToggle ").addClass('toggled')
         // console.log("hii")
     })
-    $(".menuToggle .exitMenu").click(()=>{
+    $(".menuToggle .exitMenu,.menulistAnchor").click(()=>{
         // $(".menuToggle ul").hide()
         $(".menuToggle ").removeClass('toggled')
     })
+    
     
 //   onScroll navigation color change--
     $(window).scroll(function(){
@@ -23,7 +24,7 @@ $(document).ready(()=>{
 
     //  menu Filter--
     var btns = $('.filter--menu').click(function() {
-        console.log('hi')
+        
         if (this.id == 'all') {
           $('#parent > .menu__card').fadeIn(800);
         } else {
