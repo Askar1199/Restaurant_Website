@@ -75,7 +75,6 @@ $(document).ready(()=>{
                     images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
                                     
                                     '<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
-                                    '<span class="hcg-slide-text"></span>'+
                                  '</a>';
                     dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
                 }
@@ -119,4 +118,39 @@ $(document).ready(()=>{
                 }, 3000);
       };
       initializeImageSlider();
+
+    //   ourTeam slider
+    var team_slider = new Swiper(".team-slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 2000,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        },
+    });
 })

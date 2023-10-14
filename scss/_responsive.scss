@@ -122,6 +122,14 @@
             }
         }
    }
+
+   .team-img {
+    height: 430px;
+}
+
+.team-slider{
+    padding-left: 30px;
+}
     
 }
 
@@ -305,5 +313,44 @@
         }
    }
 
+   .team-img {
+    height: 330px;
+    }
+
+    .swiper-button-wp{
+        height: 200px;
+    }
+
+    .pn2{
+        display: block;
+    }
+
+    .pn1{
+        display: none;
+    }
+    .swiper-button-wp{
+        margin: 0;
+        max-width: 100%;
+        padding-right: 30px;
+    }
+    
+    .swiper-pagination{
+        padding: 0;
+    }
+
    
+}
+
+@media ( max-width:400px){
+    .team-box .h3-title {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .team-img {
+        height: 280px;
+    }
+    
 }
